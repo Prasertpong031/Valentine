@@ -8,7 +8,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
         body {
-  padding-top: 260px;
+  padding-top: 600px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,17 +237,15 @@
   z-index: -1;
   object-fit: cover;
 }
-.vo{
-  
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.my-video {
+  position: absolute; /* Absolute positioning for flexibility */
+  top: 30px; /* Adjust as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset to align center */
+  width: 500px; /* Adjust width and height as needed */
+  height: 300px;
 }
-
-
-
-
 
     </style>
 </head>
@@ -266,13 +265,13 @@
           <div class="eyes">  </div>
       </div>
       </div>
-      <div class="vo">
-        <div class="video-container">
+
+        <div class="my-video">
           <video id="background-video" autoplay loop>
             <source src="image/va.mp4" type="video/mp4">
           </video>
         </div>
-      </div>
+      
       
       
       
